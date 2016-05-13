@@ -116,3 +116,30 @@ else {
 */
 
 // Demonstrating Recursion
+
+5!= 5*4*3*2*1= 120
+
+function factorial(n) {
+  if(n === 0) {
+    return 1;
+  }
+  else{
+    return n * factorial(n-1)
+  }
+}
+//  When called with the argument 5, the function returns 120.
+
+function fact(n) {
+  var s = new Stack()
+  while (n >1) {
+    s.push(n--);
+  }
+  var product = 1
+  while (s.length() > 0) {
+    product *= s.pop()
+  }
+  return product;
+}
+
+print(factorial(5)); // displays 120
+print(fact(5));     // displays 120
